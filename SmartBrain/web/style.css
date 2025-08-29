@@ -1,0 +1,20 @@
+:root{ --ink:#0b1220; --bg:#f7f9fc; --panel:#fff; --line:#e6ecf5; --accent:#2563eb; --muted:#5a6782; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1100px;margin:0 auto;padding:24px}
+.bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.bar h1{margin:0}
+.bar nav button{margin-left:8px}
+button,input{padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff}
+button{background:var(--accent);color:#fff;border-color:transparent;cursor:pointer}
+button:disabled{opacity:.6;cursor:not-allowed}
+input{width:100%}
+.panel{max-width:420px;background:var(--panel);padding:16px;border:1px solid var(--line);border-radius:16px}
+.panel h2{margin-top:0}
+.panel input{display:block;margin:8px 0;width:100%}
+.form-row{display:flex;gap:8px;align-items:center;margin:12px 0}
+.muted{color:var(--muted)}
+.stage{position:relative;min-height:300px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:12px}
+.stage img{max-width:100%;display:block;border-radius:12px}
+.box{position:absolute;border:3px solid #22c55e;border-radius:8px;pointer-events:none}
+.note{margin-top:10px;color:var(--muted)}
